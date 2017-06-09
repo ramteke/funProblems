@@ -28,7 +28,7 @@ public class Main {
                 else if (j == 0)
                     distance[i][j] = i;   //If j is zero, minimum diff between two words is 1st word's length
 
-                else if (str1.charAt(i - 1) == str2.charAt(j - 1))  // Words were similar earlier..so current distance is old distance
+                else if (str1.charAt(i) == str2.charAt(j))  // Words were similar earlier..so current distance is old distance
                     distance[i][j] = distance[i - 1][j - 1];
 
                 else //Words not same.  minimum distance is Min of previous left, right OR diagonal
